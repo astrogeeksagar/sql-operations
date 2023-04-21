@@ -1,0 +1,72 @@
+<table cellspacing="0" rules="all" border="1" id="Table1" style="border-collapse: collapse;">
+    <tr>
+		<td>Check</td>
+		<td>S.No</td>
+		<td>Name</td>
+		<td>Class</td>
+	</tr>
+	<tr>
+		<td><input class="checkMe" type="checkbox" /> &nbsp; </td>
+		<td>1</td>
+		<td>Sagar</td>
+		<td>BCA</td>
+	</tr>
+	<tr>
+		<td><input class="checkMe" type="checkbox" /> &nbsp; </td>
+		<td>2</td>
+		<td>Avi</td>
+		<td>MCA</td>
+	</tr>
+	<tr>
+		<td><input class="checkMe" type="checkbox" /> &nbsp; </td>
+		<td>3</td>
+		<td>Divyansh</td>
+		<td>B.Sc</td>
+	</tr>
+	<tr>
+		<td><input class="checkMe" type="checkbox" /> &nbsp; </td>
+		<td>4</td>
+		<td>Divija</td>
+		<td>Saatvi Fail</td>
+	</tr>
+</table>
+<br />
+<input type="button" value="Get Selected" onclick="GetSelected()" />
+
+
+<script type="text/javascript">
+    function GetSelected() {
+        //Reference the Table.
+        var grid = document.getElementById("Table1");
+ 
+        //Reference the CheckBoxes in Table.
+        var checkBoxes = grid.getElementsByTagName("INPUT");
+        var message = "Id Name Class\n";
+
+        //Loop through the CheckBoxes.
+        for (var i = 0; i < checkBoxes.length; i++) {
+            if (checkBoxes[i].checked) {
+                var row = checkBoxes[i].parentNode.parentNode;
+                message += row.cells[1].innerHTML;
+                message += "   " + row.cells[2].innerHTML;
+                message += "   " + row.cells[3].innerHTML;
+                message += "\n";
+            }
+        }
+ 
+        //Display selected Row data in Alert Box.
+        alert(message);
+
+    //     function export_data() {
+	// 	let data = message;
+	// 	var fp = XLSX.utils.table_to_book(data, {
+	// 		sheet: 'Sagar'
+	// 	});
+	// 	XLSX.write(fp, {
+	// 		bookType: 'xlsx',
+	// 		type: 'base64'
+	// 	});
+	// 	XLSX.writeFile(fp, 'test.xlsx');
+	// }
+    }
+</script>
