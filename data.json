@@ -1,0 +1,52 @@
+[
+    {
+        "sid": "1",
+        "name": "Sagar",
+        "phone": "8574921683",
+        "class": "BCA",
+        "age": "21",
+        "father": "Ramesh",
+        "city": "Kanpur",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "sid": "2",
+        "name": "Aman",
+        "phone": "7845785478",
+        "class": "MCA",
+        "age": "25",
+        "father": "Vimal",
+        "city": "Allahabad",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "sid": "3",
+        "name": "Divya",
+        "phone": "7858474747",
+        "class": "B.Sc.",
+        "age": "22",
+        "father": "Akash",
+        "city": "Farukabad",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "sid": "4",
+        "name": "Prashant",
+        "phone": "1452635252",
+        "class": "BCA",
+        "age": "21",
+        "father": "Prakash",
+        "city": "Kanpur",
+        "state": "Uttar Pradesh"
+    },
+    {
+        "sid": "5",
+        "name": "Naman",
+        "phone": "7485777777",
+        "class": "MCA",
+        "age": "25",
+        "father": "Prakash",
+        "city": "Allahabad",
+        "state": "Uttar Pradesh"
+    }
+]
